@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Vladyslav Myrhorod](https://up.htmlacademy.ru/htmlcss/19/user/546607).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Свистунов](https://up.htmlacademy.ru/htmlcss/19/user/221039).
 
 ---
 
