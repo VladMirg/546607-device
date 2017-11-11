@@ -69,7 +69,7 @@
     <section class="description_of_goods_slide_3">
       <h2 class="visually_hidden">Подробное описание товара</h2>
       <a href="#">
-            <img src="img/carbon_monopod.png" width="400" height="500" alt="Карбоновый монопод">
+            <img src="img/drone.png" width="526" height="334" alt="Карбоновый монопод">
           </a>
       <p class="short_decription">
         <span class="catchphrase">Порхает как бабочка,
@@ -149,8 +149,27 @@
       <section class="contact_information">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/Map.png" width="560" height="222" alt="Наш адрес">
-        <!-- Здесь будет форма -->
+        <img src="img/Map.png" width="560" height="222" alt="Наш офис по адресу ул. Строителей 15, Санкт-Петербург">
+      </section>
+      <!-- Здесь форма)) -->
+      <section class="feedback">
+        <h2 class="visually_hidden">Форма обратной связи</h2>
+        <button class="modal_close" type="button">x</button>
+        <form class="contact_form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="contact_item">
+            <label for="contact_name">Ваше имя:</label>
+            <input id="contact_name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p class="contact_item">
+            <label for="contact_e-mail">Ваш e-mail:</label>
+            <input id="contact_e-mail" type="email" name="e-mail" value="" placeholder="Для отправки ответа" required>
+          </p>
+          <p class="contact_item">
+            <label for="contact_massage">Текст письма:</label>
+            <textarea id="contact_massage" name="massage" rows="8" cols="80">В свободной форме</textarea>
+          </p>
+          <button type="submit" name="button">Отправить</button>
+        </form>
       </section>
       <footer>
         <span class="logo">DEVICE</span>

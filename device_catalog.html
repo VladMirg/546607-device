@@ -41,11 +41,56 @@
         <li class="sort_by_popularity"><a href="#">По популярности</a></li>
       </ul>
     </section>
-    <!-- Здесь будет форма
-      <form class="selection_of_goods" action="index.html" method="post">
-        <label for="price">Стоимость</label>
-        <input type="range" name="price" value="price" id="price" min="0" max="100000">
-      </form>    -->
+    <!-- Здесь форма -->
+    <section class="filters">
+      <h2 class="visually_hidden">Фильтр товаров</h2>
+      <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <label for="price">Стоимость</label>
+          <input type="range" name="price" value="price" id="price" min="0" max="100000">
+          <input type="text" name="" value="">
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="black" id="black_color" checked>
+              <label for="black_color">Черный</label>
+            </li>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="white" id="white_color">
+              <label for="black_color">Белый</label>
+            </li>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="blue" id="blue_color" checked>
+              <label for="black_color">Синий</label>
+            </li>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="red" id="red_color" checked>
+              <label for="black_color">Красный</label>
+            </li>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_checkbox" type="checkbox" name="pink" id="pink_color">
+              <label for="black_color">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_radio" type="radio" name="product_group" value="yes" id="with_bluetooth">
+              <label for="with_bluetooth">Есть</label>
+            </li>
+            <li class="filter_option">
+              <input class="visually_hidden filter_input filter_input_radio" type="radio" name="product_group" value="yes" id="without_bluetooth">
+              <label for="without_bluetooth">Нет</label>
+            </li>
+          </ul>
+          <button class="filter_button button" type="submit" name="button">Показать</button>
+        </fieldset>
+      </form>
+    </section>
     <article class="monopods">
       <section>
         <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -75,6 +120,13 @@
         <a href="#">В корзину</a>
         <a href="#">Добавить к сравнению</a>
       </section>
+      <ul class="pagination_list">
+        <li class="pagination_item"><a href="#">Назад</a></li>
+        <li class="pagination_item"><a href="#">1</a></li>
+        <li class="pagination_item"><a href="#">2</a></li>
+        <li class="pagination_item"><a href="#">3</a></li>
+        <li class="pagination_item"><a href="#">Вперед</a></li>
+      </ul>
     </article>
   </main>
   <footer>
