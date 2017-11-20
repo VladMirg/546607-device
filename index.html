@@ -21,7 +21,16 @@
         <li class="cart"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site_navigation">
-        <li class="full_list"><a href="#">Каталог товаров</a></li>
+        <li class="catalog_of_goods"><a href="#">Каталог товаров</a>
+          <ul class="list_of_goods">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -38,7 +47,7 @@
       </p>
       <a class="button" href="#">Подробнее</a>
       <table class="features_of_goods">
-        <tr>
+        <tr class="features">
           <td>8.5м</td>
           <td>5кг</td>
           <td>Карбон</td>
@@ -60,7 +69,7 @@
       </p>
       <a class="button" href="#">Подробнее</a>
       <table class="features_of_goods">
-        <tr>
+        <tr class="features">
           <td>48 часов</td>
         </tr>
         <tr>
@@ -79,7 +88,7 @@
       </p>
       <a class="button" href="#">Подробнее</a>
       <table class="features_of_goods">
-        <tr>
+        <tr class="features">
           <td>800 м</td>
           <td>50 м</td>
         </tr>
@@ -103,9 +112,9 @@
     <section class="servises">
       <h2 class="visually_hidden">Услуги</h2>
       <ul class="kinds_of_servises">
-        <li class="delivery"><a href="#">Доставка</a></li>
-        <li class="assurance"><a href="#">Страховка</a></li>
-        <li class="credit"><a href="#">Кредит</a></li>
+        <li><a class="delivery" href="#">Доставка</a></li>
+        <li><a class="assurance" href="#">Страховка</a></li>
+        <li><a class="credit" href="#">Кредит</a></li>
       </ul>
       <article class="description_of_delivery">
         <h2>Доставка</h2>
@@ -126,14 +135,10 @@
         <li><img src="img/spGagets.jpg" width="260" height="100" alt="spgagets"></li>
         <li><img src="img/GoPro.jpg" width="260" height="100" alt="GoPro"></li>
         <li><img src="img/VIVE.jpg" width="260" height="100" alt="VIVE"></li>
-      </ul>
-    </section>
-    <section class="brands_hover">
-      <ul class="list_of_brands">
-        <li><img src="img/DJI_hover.jpg" width="260" height="100" alt="dji"></li>
-        <li><img src="img/spGagets_hover.jpg" width="260" height="100" alt="spgagets"></li>
-        <li><img src="img/GoPro_hover.jpg" width="260" height="100" alt="GoPro"></li>
-        <li><img src="img/VIVE_hover.jpg" width="260" height="100" alt="VIVE"></li>
+        <li class="hidden"><img src="img/DJI_hover.jpg" width="260" height="100" alt="dji"></li>
+        <li class="hidden"><img src="img/spGagets_hover.jpg" width="260" height="100" alt="spgagets"></li>
+        <li class="hidden"><img src="img/GoPro_hover.jpg" width="260" height="100" alt="GoPro"></li>
+        <li class="hidden"><img src="img/VIVE_hover.jpg" width="260" height="100" alt="VIVE"></li>
       </ul>
     </section>
     <div class="information_about_company">
@@ -152,6 +157,7 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img src="img/Map.png" width="560" height="222" alt="Наш офис по адресу ул. Строителей 15, Санкт-Петербург">
+        <a class="more_about_us" href="#">Напишите нам</a>
       </section>
       <!-- Здесь форма)) -->
       <section class="feedback">
@@ -173,8 +179,8 @@
           <button type="submit" name="button">Отправить</button>
         </form>
       </section>
-      <footer>
-        <span class="logo">DEVICE</span>
+      <footer class="main_footer">
+        <img class="footer_logo" src="img/svg-device/logo_footer.svg" alt="DEVICE">
         <ul class="site_functionality_footer">
           <li class="login"><a href="#">Войти</a></li>
           <li class="compare"><a href="#">Сравнить</a></li>
@@ -189,10 +195,10 @@
             <li class="credit"><a href="#">Кредит</a></li>
           </ul>
         </nav>
-        <ul>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Twitter</a></li>
+        <ul class="social-buttons">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/svg-device/logo-html.svg" width="27" height="35" alt="HTMLacademy">
