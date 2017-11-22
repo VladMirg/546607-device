@@ -10,54 +10,67 @@
 
 <body>
   <header class="main_header">
-    <nav class="main_navigation">
-      <a class="main_header_logo">
+    <div class="main_header_container">
+      <nav class="main_navigation">
+        <a class="main_header_logo">
         <img src="img/svg-device/logo.svg" alt="DEVICE">
       </a>
-      <input class="site_search" type="text" name="search" placeholder="Поиск по сайту">
-      <ul class="site_functionality">
-        <li class="login"><a href="#">Войти</a></li>
-        <li class="compare"><a href="#">Сравнить</a></li>
-        <li class="cart"><a href="#">Корзина</a></li>
-      </ul>
-      <ul class="site_navigation">
-        <li class="catalog_of_goods"><a href="#">Каталог товаров</a>
-          <ul class="list_of_goods">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
+        <div class="site_functionality_container">
+          <input class="site_search" type="text" name="search" placeholder="Поиск по сайту">
+          <ul class="site_functionality">
+            <li class="login"><a href="#">Войти</a></li>
+            <li class="compare"><a href="#">Сравнить</a></li>
+            <li class="cart"><a href="#">Корзина</a></li>
           </ul>
-        </li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
+        </div>
+        <ul class="site_navigation">
+          <li class="directory"><a href="#">Каталог товаров</a>
+            <ul class="list_of_goods">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <div class="navigation_container">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="description_of_goods_slide_1">
-      <h2 class="visually_hidden">Подробное описание товара</h2> <a href="#">
+      <div class="description_of_goods_slide_container">
+
+
+        <h2 class="visually_hidden">Подробное описание товара</h2>
+        <a href="#">
           <img src="img/carbon_monopod.png" width="384" height="486" alt="Карбоновый монопод">
         </a>
-      <p class="short_decription">
-        <span class="catchphrase">Делай селфи, как Бен Стиллер!</span> Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.<br>
-      </p>
-      <a class="button" href="#">Подробнее</a>
-      <table class="features_of_goods">
-        <tr class="features">
-          <td>8.5м</td>
-          <td>5кг</td>
-          <td>Карбон</td>
-        </tr>
-        <tr>
-          <td>Длинна палки</td>
-          <td>Вес палки</td>
-          <td>Материал</td>
-        </tr>
-      </table>
+        <div class="description_of_goods_container">
+          <p class="short_decription">
+            <span class="catchphrase">Делай селфи, как Бен Стиллер!</span> Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.<br>
+          </p>
+          <a class="button" href="#">Подробнее</a>
+          <table class="features_of_goods">
+            <tr class="features">
+              <td>8.5м</td>
+              <td>5кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длинна палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
     <section class="description_of_goods_slide_2">
       <h2 class="visually_hidden">Подробное описание товара</h2>
@@ -116,18 +129,20 @@
         <li><a class="assurance" href="#">Страховка</a></li>
         <li><a class="credit" href="#">Кредит</a></li>
       </ul>
-      <article class="description_of_delivery">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </article>
-      <article class="description_of_assurance">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-      </article>
-      <article class="description_of_assurance">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-      </article>
+      <div class="description_of_servises">
+        <article class="description_of_delivery">
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+        </article>
+        <article class="description_of_assurance">
+          <h2>Гарантия</h2>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+        </article>
+        <article class="description_of_credit">
+          <h2>Кредит</h2>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </article>
+      </div>
     </section>
     <section class="brands_peace">
       <ul class="list_of_brands">
@@ -180,7 +195,9 @@
         </form>
       </section>
       <footer class="main_footer">
-        <img class="footer_logo" src="img/svg-device/logo_footer.svg" alt="DEVICE">
+        <a href="#">
+        <span class="footer_logo">DEVICE</span>
+        </a>
         <ul class="site_functionality_footer">
           <li class="login"><a href="#">Войти</a></li>
           <li class="compare"><a href="#">Сравнить</a></li>
@@ -189,10 +206,10 @@
         <p class="contact_infirmation">г.Москва, ул. Строителей, 15</p>
         <p class="phone">Тел: +7(495)495-95-95</p>
         <nav class="footer_navigation">
-          <ul class="kinds_of_servises">
+          <ul class="footer_kinds_of_servises">
             <li class="delivery"><a href="#">Доставка</a></li>
             <li class="assurance"><a href="#">Страховка</a></li>
-            <li class="credit"><a href="#">Кредит</a></li>
+            <li class="credit"><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="social-buttons">

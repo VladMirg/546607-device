@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner_page">
   <header class="main_header">
     <nav class="main_navigation">
       <a class="main_header_logo">
-        <h1 class="main_logo">DEVICE</h1>
+        <img src="img/svg-device/logo.svg" alt="DEVICE">
       </a>
       <input class="site_search" type="text" name="search" placeholder="Поиск по сайту">
       <ul class="site_functionality">
@@ -19,7 +21,16 @@
         <li class="cart"><a href="#">Корзина</a></li>
       </ul>
       <ul class="site_navigation">
-        <li class="full_list"><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Каталог товаров</a>
+          <ul class="list_of_goods">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -28,7 +39,7 @@
   </header>
   <main>
     <h1 class="monopods">Моноподы для селфи</h1>
-    <ul class="breadcrumb">
+    <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Каталог товаров</a></li>
       <li><a href="#">Моноподы для селфи</a></li>
@@ -117,8 +128,8 @@
         <img src="img/item-4.jpg" width="360" height="380" alt="Любительская селфи-палка">
         <h2>Селфи-палка «Следуй за мной»</h2>
         <span>4 900 руб.</span>
-        <a href="#">В корзину</a>
-        <a href="#">Добавить к сравнению</a>
+        <a class="button" href="#">В корзину</a>
+        <a class="button" href="#">Добавить к сравнению</a>
       </section>
       <ul class="pagination_list">
         <li class="pagination_item"><a href="#">Назад</a></li>
