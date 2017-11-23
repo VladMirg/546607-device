@@ -144,12 +144,10 @@ button,
 .description_of_goods_slide_container {
   display: flex;
   border: 1px solid blue;
-  margin: 40px auto 0px auto;
+  margin: -112px auto 0px auto;
   padding: 0px;
   width: 1160px;
   min-height: 300px;
-  position: relative;
-  top:-112px;
 }
 .description_of_goods_slide_container img {
   margin-left: 90px;
@@ -165,24 +163,51 @@ button,
   margin-right: 80px;
 
 }
-.features {
-  margin-left: auto;
+
+.features_of_goods {
+  margin-top: auto;
+  margin-right: auto;
 }
+
+
 .kind_of_goods {
   display: flex;
   border: 1px solid blue;
   margin: 40px auto 0px auto;
   width: 1160px;
+  padding: 0;
   min-height: 300px;
   justify-content: space-between;
 
 }
+.kind_of_goods div {
+  width: 160px;
+  height: 160px;
+  background: #f7e296;
+  z-index: -1;
+  display: flex;
+  margin-bottom: 35px;
+
+}
+.kind_of_goods div:hover {
+  background: #f0c52e;
+}
+
+.kind_of_goods span:active,
+.kind_of_goods img:active {
+  opacity: 0.3;
+}
+
 .kind_of_goods img {
+  margin: auto;
+}
+.kind_of_goods span {
+  display: flex;
+  margin-bottom: auto;
+  width: 160px;
+  height: auto;
   border: 1px solid blue;
-padding: 50px;
-width: 160px;
-height: 160px;
-box-sizing: border-box;
+  line-height: normal;
 }
 .kinds_of_servises,
 .site_navigation a {
@@ -217,6 +242,7 @@ span.catchphrase {
   font-weight: bold;
   font-size: 47px;
   color: #000000;
+  line-height: normal;
 
 }
 .features td {
@@ -226,14 +252,103 @@ span.catchphrase {
   font-style: normal;
   font-size: 36px;
 }
-.servises {
-  background-color: #e5e5e5;
+.kinds_of_servises .button { /* buttons for section class="servises"*/
+  color: #000000;
+  position: relative;
+  width: 160px;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
 }
 
-
-.kind_of_goods img {
-  background-color: #f7e296;
-  background-size: 160px;
+.kinds_of_servises .button:active {
+  background-color: #000000;
+  padding-right: 100px;
+  width: auto;
+  color: #f7e184;
+  height: 40px;
+}
+.description_of_assurance,
+.description_of_credit,
+.feedback,
+.hidden {
+  display: none;
+}
+.servises_container {
+  border: 1px solid blue;
+  display: flex;
+  background: #e5e5e5;
+  z-index: 10;
+  margin-top: 100px;
+}
+.servises {
+  border: 1px solid blue;
+  width: 1160px;
+  margin: -100px auto 0px auto;
+  display: flex;
+}
+.kinds_of_servises {
+  border: 1px solid red;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 0px;
+  padding-left: 0px;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.description_of_delivery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-left: 120px;
+  margin-bottom: auto;
+  margin-right: auto;
+  border: 1px solid red;
+  width: 430px
+  height: auto;
+}
+.description_of_delivery h2 {
+  margin: 0;
+  padding: 0:
+}
+.hidden
+.information_about_company,
+.brands_peace {
+  display: flex;
+}
+.main_footer_container {
+  display: flex;
+  background-color: #464646;
+}
+.main_footer {
+  margin: 0px auto;
+  width: 1160px;
+}
+.site_functionality_footer {
+  display: flex;
+}
+.footer_kinds_of_servises {
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+.social-buttons {
+  display: flex;
+}
+.information_about_company_container,
+.list_of_brands {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .kind_of_goods a {
@@ -251,18 +366,18 @@ span.catchphrase {
 .button,
 .more_about_us,
 button {
-color: #000000;
-position: relative;
- width: auto;
- padding: 0 30px;
- font-size: 18px;
- font-weight: 700;
- text-transform: uppercase;
- border: 0;
- background: none;
- cursor: pointer;
- display: inline-block;
- margin: auto;
+  color: #000000;
+  position: relative;
+  width: auto;
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
 }
 
 .button::before,
@@ -358,9 +473,7 @@ button:active {
 
 
 
-.main_footer {
-  background-color: #464646;
-}
+
 .footer_logo {
   color: #ffc600;
   font-family: "Gilroy", Arial, sans-serif;
