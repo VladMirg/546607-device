@@ -163,8 +163,7 @@ button,
   text-transform: none;
 }
 
-.list_of_goods a:hover .dropdown_content {
-  transition-duration: 1s;
+.main_navigation .site_navigation_container > div:hover .dropdown_content {
   display: block;
 }
 
@@ -355,7 +354,7 @@ button,
 
 .kind_of_goods {
   display: flex;
-  margin: 98px auto 0px auto;
+  margin: 92px auto 0px auto;
   width: 1160px;
   padding: 0;
   min-height: 300px;
@@ -371,18 +370,24 @@ button,
   margin-bottom: 35px;
 
 }
+
 .kind_of_goods div:hover {
   background: #f0c52e;
 }
 
-.kind_of_goods span:active,
-.kind_of_goods img:active {
+.kind_of_goods li:active :not(div) {
   opacity: 0.3;
 }
 
-.kind_of_goods img {
+
+.kind_of_goods svg {
   margin: auto;
 }
+
+.monopods svg {
+  margin-bottom: 0;
+}
+
 .kind_of_goods span {
   display: flex;
   margin-bottom: auto;
@@ -673,29 +678,78 @@ h2 {
 .site_functionality_footer {
   margin: 0;
   padding: 0;
-  min-width: 360px;
+  min-width: 323px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   outline: 2px solid yellow;
   margin-left: auto;
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
+
+.login svg {
+  margin-right: 6px;
+}
+
+.compare svg {
+  margin-right: 6px;
+}
+
 .footer_kinds_of_servises {
   display: flex;
+  justify-content: space-between;
   margin: 0;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0;
   outline: 2px solid red;
 }
 
 .social-buttons {
   display: flex;
+  justify-content: space-between;
   outline: 2px solid yellow;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
+  min-width: 160px;
 }
+
+.site_functionality_footer span {
+  opacity: 0.7;
+}
+.social-buttons svg {
+  opacity: 0.3;
+}
+
+.social-buttons svg:hover,
+.site_functionality_footer a:hover svg {
+  opacity: 0.6;
+}
+
+.social-buttons svg:active {
+  opacity: 0.1;
+}
+
+.site_functionality_footer a:active {
+ opacity: 0.3;
+}
+
+.site_functionality_footer a:hover span {
+  opacity: 1;
+}
+
+.footer_logo:hover,
+.HTMLacademy_logo:hover,
+.footer_kinds_of_servises a:hover {
+  opacity: 0.6;
+}
+
+.footer_logo:active,
+.HTMLacademy_logo:active,
+.footer_kinds_of_servises a:active {
+  opacity: 0.3;
+}
+
 .footer_logo_link {
   margin-top: auto;
   outline: 2px solid red;
@@ -709,9 +763,15 @@ h2 {
 
 .footer_kinds_of_servises_container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
   outline: 2px solid white;
+}
+
+.footer_kinds_of_servises_container {
+  margin: 0;
+  padding: 0;
 }
 
 .footer_kinds_of_servises_container .contact_infirmation {
@@ -723,6 +783,12 @@ h2 {
   outline: 2px solid yellow;
   order: 1;
   margin-left: auto;
+}
+
+.footer_navigation {
+  margin:auto;
+  margin-top: 10px;
+  min-width: 440px;
 }
 
 .information_about_company {
