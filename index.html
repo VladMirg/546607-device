@@ -16,7 +16,11 @@
         <img src="img/svg-device/logo.svg" alt="DEVICE">
       </a>
         <div class="site_functionality_container">
-          <input class="site_search" type="text" name="search" placeholder="Поиск по сайту">
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually_hidden" for="search_field">Поиск по сайту</label>
+            <input id="search_field" name="search_field" type="search" placeholder="Поиск по сайту">
+            <button class="search_button" type="submit">Найти</button>
+          </form>
           <ul class="site_functionality">
             <li><a class="login_link" href="#">Войти</a></li>
             <li><a class="compare" href="#">Сравнить</a></li>
@@ -260,26 +264,8 @@
           </div>
         </section>
       </div>
-      <!-- Здесь форма)) -->
-      <section class="feedback">
-        <h2 class="visually_hidden">Форма обратной связи</h2>
-        <button class="modal_close" type="button">x</button>
-        <form class="contact_form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="contact_item">
-            <label for="contact_name">Ваше имя:</label>
-            <input id="contact_name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
-          </p>
-          <p class="contact_item">
-            <label for="contact_e-mail">Ваш e-mail:</label>
-            <input id="contact_e-mail" type="email" name="e-mail" value="" placeholder="Для отправки ответа" required>
-          </p>
-          <p class="contact_item">
-            <label for="contact_massage">Текст письма:</label>
-            <textarea id="contact_massage" name="massage" rows="8" cols="80">В свободной форме</textarea>
-          </p>
-          <button type="submit" name="button">Отправить</button>
-        </form>
-      </section>
+
+
     </div>
     <div class="main_footer_container">
       <footer class="main_footer">
@@ -336,6 +322,25 @@
               </a>
       </footer>
     </div>
+    <section class="modal modal_feedback">
+      <h2 class="visually_hidden">Форма обратной связи</h2>
+      <button class="modal_close" type="button">Закрыть</button>
+      <form class="contact_form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact_item">
+          <label for="contact_name">Ваше имя:</label>
+          <input id="contact_name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        </p>
+        <p class="contact_item">
+          <label for="contact_e-mail">Ваш e-mail:</label>
+          <input id="contact_e-mail" type="email" name="e-mail" value="" placeholder="Для отправки ответа" required>
+        </p>
+        <p class="contact_item">
+          <label for="contact_massage">Текст письма:</label>
+          <textarea id="contact_massage" name="massage" rows="8" cols="80">В свободной форме</textarea>
+        </p>
+        <button class="button" type="submit" name="button">Отправить</button>
+      </form>
+    </section>
   </main>
 </body>
 
