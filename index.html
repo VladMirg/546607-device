@@ -34,12 +34,18 @@
             </div>
             <div class="dropdown_content">
               <div class="dropdown_content_container">
-                <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
-                <a href="#">Экшн-камеры</a>
-                <a href="#">Фитнес-браслеты</a>
-                <a href="#">Умные часы</a>
-                <a href="#">Квадрокоптеры</a>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -53,77 +59,107 @@
     </div>
   </header>
   <main>
-    <section class="description_of_goods_slide_1">
-      <div class="description_of_goods_slide_container">
-        <h2 class="visually_hidden">Подробное описание товара</h2>
-        <a href="#">
-          <img src="img/carbon_monopod.png" width="384" height="486" alt="Карбоновый монопод">
-        </a>
-        <div class="description_of_goods_container">
-          <p class="short_decription">
-            <span class="catchphrase">Делай селфи,<br> как Бен Стиллер!</span>
-            <span class="short_decription_container">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span>
-          </p>
-          <div class="switcher_container">
-            <a class="button" href="#">Подробнее</a>
-            <input type="radio" name="slider1" value="slider1" checked>
-            <input type="radio" name="slider1" value="slider1">
-            <input type="radio" name="slider1" value="slider1">
-          </div>
-          <table class="features_of_goods">
-            <tr class="features">
-              <td>8.5м</td>
-              <td>5кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr>
-              <td>Длинна палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
-        </div>
+    <input class="visually_hidden" type="radio" id="product_1" name="toggle" checked>
+    <input class="visually_hidden" type="radio" id="product_2" name="toggle">
+    <input class="visually_hidden" type="radio" id="product_3" name="toggle">
+    <div class="wrapper">
+      <div class="promo_slider_controls">
+        <label for="product_1">Предложение 1</label>
+        <label for="product_2">Предложение 2</label>
+        <label for="product_3">Предложение 3</label>
       </div>
-    </section>
-    <section class="description_of_goods_slide_2">
-      <h2 class="visually_hidden">Подробное описание товара</h2>
-      <a href="#">
-          <img src="img/fitness_tracker_main_slider.png" width="345" height="485" alt="Карбоновый монопод">
-        </a>
-      <p class="short_decription">
-        <span class="catchphrase">Худеем правильно!</span> Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
-      </p>
-      <a class="button" href="#">Подробнее</a>
-      <table class="features_of_goods">
-        <tr class="features">
-          <td>48 часов</td>
-        </tr>
-        <tr>
-          <td>Без подзарядки</td>
-        </tr>
-      </table>
-    </section>
-    <section class="description_of_goods_slide_3">
-      <h2 class="visually_hidden">Подробное описание товара</h2>
-      <a href="#">
-            <img src="img/drone.png" width="526" height="334" alt="Карбоновый монопод">
+      <section class="description_of_goods slide" id="slide1">
+        <div class="description_of_goods_slide_container">
+          <h2 class="visually_hidden">Подробное описание товара</h2>
+          <a href="#">
+            <div class="image_wrapper">
+              <img src="img/carbon_monopod.png" width="384" height="486" alt="Карбоновый монопод">
+            </div>
           </a>
-      <p class="short_decription">
-        <span class="catchphrase">Порхает как бабочка,
-              жалит как пчела!</span> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-      </p>
-      <a class="button" href="#">Подробнее</a>
-      <table class="features_of_goods">
-        <tr class="features">
-          <td>800 м</td>
-          <td>50 м</td>
-        </tr>
-        <tr>
-          <td>Дальность полета</td>
-          <td>Радиус поражения</td>
-        </tr>
-      </table>
-    </section>
+          <div class="description_of_goods_container">
+            <p class="short_decription">
+              <span class="catchphrase">Делай селфи,<br> как Бен Стиллер!</span>
+              <span class="short_decription_container">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span>
+            </p>
+            <div class="promo_buttons_container">
+              <a class="button" href="#">Подробнее</a>
+              <table class="features_of_goods">
+                <tr class="features">
+                  <td>8.5м</td>
+                  <td>5кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr>
+                  <td>Длинна палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="description_of_goods slide" id="slide2">
+        <div class="description_of_goods_slide_container">
+          <h2 class="visually_hidden">Подробное описание товара</h2>
+          <a href="#">
+            <div class="image_wrapper">
+              <img src="img/fitness_tracker_main_slider.png" width="345" height="485" alt="Фитнес браслет">
+            </div>
+          </a>
+          <div class="description_of_goods_container">
+            <p class="short_decription">
+              <span class="catchphrase">Худеем<br>правильно!</span>
+              <span class="short_decription_container">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
+            </p>
+            <div class="promo_buttons_container">
+              <a class="button" href="#">Подробнее</a>
+              <table class="features_of_goods">
+                <tr class="features">
+                  <td>48 часов</td>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="description_of_goods slide" id="slide3">
+        <div class="description_of_goods_slide_container">
+          <h2 class="visually_hidden">Подробное описание товара</h2>
+          <a href="#">
+            <div class="image_wrapper">
+              <img src="img/drone.png" width="526" height="334" alt="Дрон">
+            </div>
+          </a>
+          <div class="description_of_goods_container">
+            <p class="short_decription">
+              <span class="catchphrase">Порхает как бабочка,<br> жалит как пчела!</span>
+              <span class="short_decription_container">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
+            </p>
+            <div class="promo_buttons_container">
+              <a class="button" href="#">Подробнее</a>
+              <table class="features_of_goods">
+                <tr class="features">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr>
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
     <section class="goods">
       <h2 class="visually_hidden">Категории товаров</h2>
       <ul class="kind_of_goods">
@@ -244,8 +280,10 @@
       <div class="information_about_company_container">
         <section class="about_us">
           <h2>О нас</h2>
+
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдалённые точки России! DEVICE работает со многими транспортными компаниями:</p>
+
           <ul class="business_activities">
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>

@@ -22,7 +22,8 @@
             <button class="search_button" type="submit">Найти</button>
           </form>
           <ul class="site_functionality">
-            <li><a class="login_link" href="#">Войти</a></li>
+            <li><a class="login_link" href="#">Валентин Петухов</a></li>
+            <li><a class="profile" href="#">Выйти</a></li>
             <li><a class="compare" href="#">Сравнить</a></li>
             <li><a class="cart" href="#">Корзина</a></li>
           </ul>
@@ -34,12 +35,18 @@
             </div>
             <div class="dropdown_content">
               <div class="dropdown_content_container">
-                <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
-                <a href="#">Экшн-камеры</a>
-                <a href="#">Фитнес-браслеты</a>
-                <a href="#">Умные часы</a>
-                <a href="#">Квадрокоптеры</a>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="dropdown_content_column">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
               </div>
             </div>
           </div>
@@ -64,33 +71,35 @@
     <div class="sort_container">
       <div class="types_of_sort_container">
         <section class="sort">
-          <span>Фильтр:</span>
-          <h2>Сортировка:</h2>
-          <ul class="types_of_sort">
-            <li class="sort_by_price"><a href="#">По цене</a></li>
-            <li class="sort_by_type"><a href="#">По типу</a></li>
-            <li class="sort_by_popularity"><a href="#">По популярности</a></li>
-          </ul>
-          <ul class="sorting_order">
-            <li><a class="increasing_order" href="#"><span class="visually_hidden">По возрастанию</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <h2 class="filter">Фильтр:</h2>
+          <div class="list_top_container">
+            <h2>Сортировка:</h2>
+            <ul class="types_of_sort">
+              <li class="sort_by_price"><a href="#">По цене</a></li>
+              <li class="sort_by_type"><a href="#">По типу</a></li>
+              <li class="sort_by_popularity"><a href="#">По популярности</a></li>
+            </ul>
+            <ul class="sorting_order">
+              <li><a class="increasing_order" href="#"><span class="visually_hidden">По возрастанию</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	               width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
                 <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
                 </svg>
                 </a></li>
-            <li><a class="decreasing_order currrent_sorting_order" href="#"><span class="visually_hidden">По убыванию</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <li><a class="decreasing_order currrent_sorting_order" href="#"><span class="visually_hidden">По убыванию</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
               <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
               </svg>
             </a></li>
-          </ul>
+            </ul>
+          </div>
         </section>
       </div>
       <div class="catalog_container">
         <div class="filters_container">
           <section class="filters">
             <h2 class="visually_hidden">Фильтр товаров</h2>
-            <form class="filters" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
+            <form class="filter_form" action="https://echo.htmlacademy.ru" method="get">
+              <fieldset class="price_filter">
                 <div class="filter_range">
                   <div class="filter_range_title">Стоимость</div>
                   <div class="range_controls">
@@ -114,7 +123,7 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="color_filter">
                 <legend>Цвет</legend>
                 <ul>
                   <li class="filter_option">
@@ -139,7 +148,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="bluetooth_filter">
                 <legend>Bluetooth</legend>
                 <ul>
                   <li class="filter_option">
@@ -213,9 +222,9 @@
             <li class="pagination_item page_back"><a href="#">Назад</a></li>
             <li>
               <ul class="pagination_list_of_page_numbers">
-                <li class="pagination_item page_numbe"><a href="#">1</a></li>
-                <li class="pagination_item page_numbe"><a href="#">2</a></li>
-                <li class="pagination_item page_numbe"><a href="#">3</a></li>
+                <li class="pagination_item page_number pagination_item_current"><a href="#">1</a></li>
+                <li class="pagination_item page_number"><a href="#">2</a></li>
+                <li class="pagination_item page_number"><a href="#">3</a></li>
               </ul>
             </li>
             <li class="pagination_item page_next"><a href="#">Вперед</a></li>
