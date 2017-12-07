@@ -285,7 +285,7 @@ button,
   margin: -112px auto 0px auto;
   padding: 0px;
   width: 1160px;
-  min-height: 550px;
+  height: 550px;
   background-image: url(../img/slider01.png);
   background-position-x: 935px;
   background-position-y: 10px;
@@ -298,12 +298,6 @@ button,
   margin-right: auto;
   width: 1160px;
   position: relative;
-}
-
-
-
-.description_of_goods_slide_container img {
-  margin-left: 90px;
 }
 
 .promo_slider_controls label {
@@ -375,10 +369,9 @@ button,
   flex-direction: column;
   align-items: flex-start;
 
-  width: 480px;
+  width: 100%;
   padding: 0;
-  margin-left: auto;
-  margin-right: 80px;
+  margin-left: 30px;
   margin-top: 62px;
 }
 
@@ -420,16 +413,20 @@ button,
 }
 
 .image_wrapper {
-
   display: flex;
   width: 570px;
-  height: 450px;
+  height: 500px;
 }
 
 .image_wrapper img {
   margin: auto;
+  margin-top: 0;
 }
 
+.image_wrapper .product_3 {
+  margin-top: 65px;
+  height: 334px;
+}
 
 .kind_of_goods div {
   width: 160px;
@@ -507,11 +504,12 @@ span.catchphrase {
   color: #000000;
   line-height: normal;
   letter-spacing: 0.47px;
-  min-width: 501px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .description_of_goods_container p {
+  width: 100%;
   position: relative;
 }
 
@@ -522,6 +520,7 @@ span.catchphrase {
   height: 7px;
   background-color: #ffffff;
   top: -40px;
+  left: 0px;
 }
 
 .features td {
@@ -708,12 +707,13 @@ h2 {
   display: flex;
   background-color: #464646;
   min-height: 325px;
-  margin-top: 77px;
+  margin-top: 67px;
 }
+
 .main_footer {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0px auto;
   width: 1160px;
 }
@@ -751,7 +751,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  min-width: 160px;
+  width: 140px;
+  margin-top: 46px;
 }
 
 .main_footer::before {
@@ -763,6 +764,11 @@ h2 {
   height: 7px;
   bottom: 80px;
   background-color: #ffc600;
+}
+
+.main_footer .HTMLacademy_logo {
+  margin-left: auto;
+  margin-top: -62px;
 }
 
 .site_functionality_footer span {
@@ -808,27 +814,26 @@ h2 {
   display: flex;
   width: 100%;
   min-height: 80px;
+  margin-top: 35px;
 }
 
 .footer_kinds_of_servises_container {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
   width: 100%;
-}
-
-.footer_kinds_of_servises_container {
   margin: 0;
   padding: 0;
 }
 
 .footer_kinds_of_servises_container .contact_infirmation {
   margin-right: auto;
+  margin-top: 12px;
 }
 
 .footer_kinds_of_servises_container .phone {
   order: 1;
   margin-left: auto;
+  margin-top: 12px;
 }
 
 .footer_navigation {
@@ -849,6 +854,7 @@ h2 {
  margin-left: auto;
  margin-right: auto;
  width: 1160px;
+ min-height: 530px;
  padding-top: 150px;
 }
 
@@ -863,11 +869,10 @@ h2 {
   box-sizing: border-box;
 }
 
-
-.contact_information img {
-  width: 560px;
-  height: 222px;
-  margin-bottom: 70px;
+.more_about_us_container,
+.write_us_container {
+  margin-top: auto;
+  margin-bottom: 15px;
 }
 
 .contact_information {
@@ -928,7 +933,6 @@ h2 {
 .business_activities {
   margin: 0;
   padding: 0;
-  margin-bottom: 52px;
   padding-left: 36px;
   letter-spacing: 0.8px;
 }
@@ -1427,6 +1431,7 @@ h2 {
   position: absolute;
   top: 0;
   bottom: 0;
+  left: 0;
   z-index: 10;
   width: 360px;
   height: 380px;
