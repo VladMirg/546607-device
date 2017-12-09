@@ -235,20 +235,26 @@
       <section class="servises">
         <h2 class="visually_hidden">Услуги</h2>
         <ul class="kinds_of_servises">
-          <li><a class="delivery" href="#">Доставка</a></li>
-          <li><a class="assurance" href="#">Гарантия</a></li>
-          <li><a class="credit" href="#">Кредит</a></li>
+          <li><input class="visually_hidden" type="radio" id="delivery" name="tabstab" checked>
+            <label class="delivery" for="delivery">Доставка</label>
+          </li>
+          <li><input class="visually_hidden" type="radio" id="assurance" name="tabstab">
+            <label class="assurance" for="assurance">Гарантия</label>
+          </li>
+          <li><input class="visually_hidden" type="radio" id="credit" name="tabstab">
+            <label class="credit" for="credit">Кредит</label>
+          </li>
         </ul>
         <div class="description_of_servises">
-          <article class="description_of_delivery">
+          <article class="description_of_delivery" id="credit222">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </article>
-          <article class="description_of_assurance">
+          <article class="description_of_assurance referense">
             <h2>Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </article>
-          <article class="description_of_credit">
+          <article class="description_of_credit referense">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </article>
@@ -384,10 +390,12 @@
     <section class="modal modal_map">
       <h2 class="visually_hidden">Как до нас добраться</h2>
       <button class="modal_close" type="button">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.26133327343!2d29.97955471590694!3d60.043896760565346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696494cfe1fca87%3A0x982a0988a171eb00!2sUlitsa+Stroiteley%2C+15%2C+Gorskaya%2C+Sankt-Peterburg%2C+Russia%2C+197701!5e0!3m2!1sen!2sae!4v1512719971989"
+        width="960" height="559" allowfullscreen>
+      </iframe>
       <p>
         <img src="img/map-big.png" width="960" height="559" alt="Наш офис по адресу ул. Строителей 15, Санкт-Петербург">
       </p>
-      </form>
     </section>
 
   </main>

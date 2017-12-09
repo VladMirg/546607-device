@@ -54,7 +54,6 @@ ul {
 
 button,
 .button,
-.kinds_of_servises,
 .more_about_us,
 .site_navigation a,
 .kinds_of_servises,
@@ -314,15 +313,13 @@ button,
   background-size: cover;
 }
 
-#product_1:checked ~ .description_of_goods_slide_container {
-  background-image: url(../img/slider01.png);
-}
 
-#product_2:checked ~ .description_of_goods_slide_container {
+
+#slide2 .description_of_goods_slide_container {
   background-image: url(../img/slider02.png);
 }
 
-#product_3:checked ~ .description_of_goods_slide_container {
+#slide3 .description_of_goods_slide_container {
   background-image: url(../img/slider03.png);
 }
 
@@ -531,11 +528,6 @@ span.catchphrase {
   font-size: 36px;
 }
 
-.description_of_assurance,
-.description_of_credit {
-  display: none;
-}
-
 .servises_container {
   position: relative;
   z-index: 10;
@@ -596,14 +588,23 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.kinds_of_servises a {
+.kinds_of_servises label {
+  ext-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: 3.6px;
+  background: transparent;
+  border: none;
   position: relative;
   min-width: 160px;
   text-align: center;
   cursor: pointer;
 }
 
-.kinds_of_servises a::before {
+.kinds_of_servises label::before {
   content: " ";
   position: absolute;
   width: 100%;
@@ -617,39 +618,25 @@ input[type="radio"].visually-hidden {
   z-index: -1;
 }
 
-.kinds_of_servises a:active::before {
+input[name="tabstab"]:checked ~ label::before {
   background-color: #000000;
   padding-right: 120px;
   height: 100%;
 }
-.kinds_of_servises a:active {
+input[name="tabstab"]:checked ~ label {
   color: #f7e184;
 }
-.kinds_of_servises a:hover::before {
+.kinds_of_servises label:hover::before {
   height: 100%;
   transition: 0.2s;
   transition-timing-function: linear;
 }
 
-.description_of_servises {
-  position: relative;
-  border-left: 8px solid #000000;
-  display: flex;
-  flex-wrap: wrap;
-  width: 880px;
-}
-
-.description_of_delivery p {
-  margin-top: 26px;
-  width: auto;
-  height: auto;
-  font-size: 15px;
-  line-height: 31px;
-  letter-spacing: 0.26px;
-}
-
-.description_of_delivery {
-  display: flex;
+.description_of_delivery,
+.description_of_assurance,
+.description_of_credit {
+  position: absolute;
+  display: none;
   flex-wrap: wrap;
   margin-top: 79px;
   margin-left: 115px;
@@ -660,10 +647,34 @@ input[type="radio"].visually-hidden {
   height: auto;
 }
 
+#delivery:checked .description_of_servises .description_of_delivery {
+  display: flex;
+  z-index: 10;
+}
+
+
+
+.description_of_servises {
+  position: relative;
+  border-left: 8px solid #000000;
+  display: flex;
+  flex-wrap: wrap;
+  width: 880px;
+}
+
+.description_of_servises p {
+  margin-top: 26px;
+  width: auto;
+  height: auto;
+  font-size: 15px;
+  line-height: 31px;
+  letter-spacing: 0.26px;
+}
+
 h2 {
   letter-spacing: 1px;
 }
-.description_of_delivery h2 {
+.description_of_servises h2 {
   margin-bottom: 10px;
   margin-top: 0px;
   padding: 0:
@@ -1756,6 +1767,7 @@ input[type="search"]:focus {
   cursor: pointer;
   opacity: 0.5;
   transition-duration: 300ms;
+  z-index: 10;
 }
 
 .modal_feedback input[type="text"],
@@ -1772,6 +1784,24 @@ input[type="search"]:focus {
   resize: none;
 }
 
+
+.bluetooth_filter input[type="radio"]:focus + label,
+.color_filter input[type="checkbox"]:focus + label {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.bluetooth_filter input[type="radio"]:disabled + label ,
+.color_filter input[type="checkbox"]:disabled + label {
+  opacity: 0.25;
+}
+
+.bluetooth_filter input[type="radio"]:hover + label::before ,
+.color_filter input[type="checkbox"]:hover + label::before {
+  opacity: 0.6;
+}
+
 .modal_close:hover {
   opacity: 1;
   transform: rotate(45deg);
@@ -1780,6 +1810,13 @@ input[type="search"]:focus {
 .modal_feedback,
 .modal_map {
   display: none;
+}
+
+.modal_map iframe {
+  position: absolute;
+  z-index: 1;
+  frameborder: 0;
+  border: 0;
 }
 
 .modal_show {
