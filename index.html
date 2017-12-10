@@ -78,7 +78,7 @@
           </a>
           <div class="description_of_goods_container">
             <p class="short_decription">
-              <span class="catchphrase">Делай селфи,<br> как Бен Стиллер!</span>
+              <span class="catchphrase">Делай селфи, как Бен Стиллер!</span>
               <span class="short_decription_container">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</span>
             </p>
             <div class="promo_buttons_container">
@@ -109,7 +109,7 @@
           </a>
           <div class="description_of_goods_container">
             <p class="short_decription">
-              <span class="catchphrase">Худеем<br>правильно!</span>
+              <span class="catchphrase">Худеем правильно!</span>
               <span class="short_decription_container">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</span>
             </p>
             <div class="promo_buttons_container">
@@ -137,7 +137,7 @@
           </a>
           <div class="description_of_goods_container">
             <p class="short_decription">
-              <span class="catchphrase">Порхает как бабочка,<br> жалит как пчела!</span>
+              <span class="catchphrase drone">Порхает как бабочка, жалит как пчела!</span>
               <span class="short_decription_container">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</span>
             </p>
             <div class="promo_buttons_container">
@@ -233,28 +233,31 @@
     </section>
     <div class="servises_container">
       <section class="servises">
+        <input class="visually_hidden" type="radio" id="credit" name="tabstab">
+        <input class="visually_hidden" type="radio" id="assurance" name="tabstab">
+        <input class="visually_hidden" type="radio" id="delivery" name="tabstab" checked>
         <h2 class="visually_hidden">Услуги</h2>
         <ul class="kinds_of_servises">
-          <li><input class="visually_hidden" type="radio" id="delivery" name="tabstab" checked>
+          <li>
             <label class="delivery" for="delivery">Доставка</label>
           </li>
-          <li><input class="visually_hidden" type="radio" id="assurance" name="tabstab">
+          <li>
             <label class="assurance" for="assurance">Гарантия</label>
           </li>
-          <li><input class="visually_hidden" type="radio" id="credit" name="tabstab">
+          <li>
             <label class="credit" for="credit">Кредит</label>
           </li>
         </ul>
         <div class="description_of_servises">
-          <article class="description_of_delivery">
+          <article class="description_of_delivery tabcontent">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </article>
-          <article class="description_of_assurance referense">
+          <article class="description_of_assurance tabcontent">
             <h2>Гарантия</h2>
             <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </article>
-          <article class="description_of_credit referense">
+          <article class="description_of_credit tabcontent">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </article>
@@ -262,6 +265,8 @@
       </section>
     </div>
     <section class="brands_peace">
+      <h2 class="visually_hidden">Логотипы доступных брендов</h2>
+      <h2 class="visually_hidden"></h2>
       <ul class="list_of_brands">
         <li class="lable">
           <img src="img/DJI.jpg" width="260" height="100" alt="dji">

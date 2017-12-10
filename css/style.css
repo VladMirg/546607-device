@@ -122,6 +122,7 @@ button,
   flex-wrap: wrap;
   align-items: flex-start;
   margin-left: 60px;
+  margin-top: 10px;
 }
 
 .dropdown_content_container ul {
@@ -501,8 +502,12 @@ span.catchphrase {
   color: #000000;
   line-height: normal;
   letter-spacing: 0.47px;
-  width: 100%;
+  width: 399px;
   margin-bottom: 20px;
+}
+
+.short_decription .drone {
+  width: 100%;
 }
 
 .description_of_goods_container p {
@@ -618,23 +623,25 @@ input[type="radio"].visually-hidden {
   z-index: -1;
 }
 
-input[name="tabstab"]:checked ~ label::before {
+
+#delivery:checked ~ .kinds_of_servises .delivery::before,
+#credit:checked ~ .kinds_of_servises .credit::before,
+#assurance:checked ~ .kinds_of_servises .assurance::before {
   background-color: #000000;
   padding-right: 120px;
   height: 100%;
 }
-input[name="tabstab"]:checked ~ label {
+
+#delivery:checked ~ .kinds_of_servises .delivery,
+#credit:checked ~ .kinds_of_servises .credit,
+#assurance:checked ~ .kinds_of_servises .assurance {
   color: #f7e184;
 }
 .kinds_of_servises label:hover::before {
   height: 100%;
-  transition: 0.2s;
-  transition-timing-function: linear;
 }
 
-.description_of_delivery,
-.description_of_assurance,
-.description_of_credit {
+.tabcontent {
   position: absolute;
   display: none;
   flex-wrap: wrap;
@@ -645,14 +652,36 @@ input[name="tabstab"]:checked ~ label {
   width: 430px;
   min-height: 170px;
   height: auto;
+
 }
 
-#delivery:checked .description_of_servises .description_of_delivery {
+#delivery:checked ~ .description_of_servises .description_of_delivery,
+#assurance:checked ~ .description_of_servises .description_of_assurance,
+#credit:checked ~ .description_of_servises .description_of_credit {
   display: flex;
   z-index: 10;
 }
 
+#delivery:checked ~ .description_of_servises {
+  background-image: url("../img/svg-device/delivery.svg");
+  background-position-x: 674px;
+  background-position-y: 83px;
+  background-repeat: no-repeat;
+}
 
+#assurance:checked ~ .description_of_servises  {
+  background-image: url("../img/svg-device/warranty.svg");
+  background-position-x: 674px;
+  background-position-y: 83px;
+  background-repeat: no-repeat;
+}
+
+#credit:checked ~ .description_of_servises  {
+  background-image: url("../img/svg-device/credit.svg");
+  background-position-x: 674px;
+  background-position-y: 83px;
+  background-repeat: no-repeat;
+}
 
 .description_of_servises {
   position: relative;
@@ -1033,21 +1062,6 @@ h2 {
   text-transform: none;
 }
 
-.description_of_servises::before {
-  content: " ";
-
-  position: absolute;
-
-  width: 136px;
-  height: 164px;
-  top: 85px;
-  right: 65px;
-
-  background-image: url("../img/svg-device/delivery.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .business_activities li {
   position: relative;
   font-weight: bold;
@@ -1254,7 +1268,7 @@ h2 {
   justify-content: flex-end;
   padding-top: 69px;
   padding-right: 65px;
-  width: 328px;
+  width: 329px;
   box-sizing: border-box;
 
 }
@@ -1286,7 +1300,8 @@ h2 {
 }
 
 .filters .price_filter {
-  margin-bottom: 36px;
+  margin-bottom: 9px;
+  height: 132px;
 }
 
 .filter_range_title {
@@ -1341,8 +1356,6 @@ h2 {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 .filters_container {
@@ -1379,6 +1392,10 @@ h2 {
   justify-content: center;
   padding: 0;
 }
+.pagination_item a {
+  color: rgba(0,0,0,.3);
+}
+
 
 .page_back a,
 .page_next a {
@@ -1401,6 +1418,7 @@ h2 {
   color: rgba(0, 0, 0, 1);
 }
 
+.currrent_sorting_order a,
 .page_back a,
 .page_next a,
 .pagination_item_current a {
@@ -1414,10 +1432,8 @@ h2 {
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.page_back a:active,
-.page_next a:active {
-  color: rgba(0, 0, 0, 0.3);
-}
+
+
 
 
 /* kartochki tovarov*/
@@ -1425,9 +1441,11 @@ h2 {
   background: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   width: 832px;
   padding-top: 70px;
+  padding-left: 70px;
+  box-sizing: border-box;
+
 }
 .catalog_items_monopods article:nth-of-type(2n+0) {
   margin-left: 40px;
