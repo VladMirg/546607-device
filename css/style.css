@@ -752,6 +752,7 @@ h2 {
 .main_footer .HTMLacademy_logo {
   margin-left: auto;
   margin-top: -62px;
+  width: 27px;
 }
 
 .site_functionality_footer span {
@@ -1415,7 +1416,7 @@ h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 100;
   font-size: 16px;
-  color: #000000;
+  color: #464646;
   line-height: 18px;
   letter-spacing: 0.18px;
   margin: 0;
@@ -1481,10 +1482,9 @@ h2 {
   text-transform: none;
   color: rgba(0, 0, 0, 0.2);
   font-size: 14px;
-  line-height: 38px;
   vertical-align: top;
   cursor: pointer;
-  margin-top: -22px;
+  margin-top: -17px;
 }
 
 .range_toggle input {
